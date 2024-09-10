@@ -58,7 +58,7 @@ class PokemonPage extends StatelessWidget {
               itemBuilder: (context, index) {
                 final pokemonCard = state.pokemonCards[index];
                 return  AnimatedCard(
-                  imageUrl: pokemonCard.imageUrl ?? '',
+                  imageUrl: pokemonCard.imageUrl,
                   name: '',
                   index: index,
                   onTap: () {
