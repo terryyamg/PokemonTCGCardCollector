@@ -12,6 +12,7 @@ import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import '../card/models/pokemon_card.dart';
+import '../main/main.dart';
 import 'bloc/card_detail_bloc.dart';
 
 class CardDetailPage extends StatelessWidget {
@@ -121,9 +122,9 @@ class CardDetailPage extends StatelessWidget {
                   }
                 }
                 if (Platform.isIOS) {
-                  print("Requesting photo permission on iOS...");
+                  logger.d("Requesting photo permission on iOS...");
                   granted = await Permission.photos.request().isGranted;
-                  print("Permission granted: $granted");
+                  logger.d("Permission granted: $granted");
                 }
                 if (granted) {
                   await _downloadImage(imageUrl);

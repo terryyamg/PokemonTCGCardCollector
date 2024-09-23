@@ -1,12 +1,37 @@
 // lib/main.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:logger/logger.dart';
 import 'package:pokemon_tcg_card_collector/main/repositories/main_repository.dart';
 
 import '../card/card_page.dart';
 import '../colors.dart';
 import 'animated_card.dart';
 import 'bloc/main_bloc.dart';
+
+var logger = Logger(
+  printer: PrettyPrinter(
+    colors: true,
+    printEmojis: true,
+    dateTimeFormat: DateTimeFormat.onlyTimeAndSinceStart,
+    levelColors: {
+      Level.trace: AnsiColor.fg(AnsiColor.grey(0.5)),
+      Level.debug: const AnsiColor.fg(35),
+      Level.info: const AnsiColor.fg(32),
+      Level.warning: const AnsiColor.fg(220),
+      Level.error: const AnsiColor.fg(196),
+      Level.fatal: const AnsiColor.fg(199),
+    },
+    levelEmojis: {
+      Level.trace: '',
+      Level.debug: '🟢',
+      Level.info: '🔵',
+      Level.warning: '🟡',
+      Level.error: '🔴',
+      Level.fatal: '🟣',
+    }
+  ),
+);
 
 void main() {
   runApp(const MyApp());

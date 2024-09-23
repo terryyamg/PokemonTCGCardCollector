@@ -2,6 +2,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../main.dart';
 import '../models/main_pokemon.dart';
 import '../repositories/main_repository.dart';
 
@@ -19,7 +20,7 @@ class MainBloc extends Bloc<MainEvent, MainState> {
         final pokemonCards = await repository.fetchPokemonList();
         emit(MainLoaded(pokemonCards));
       } catch (e) {
-        print("MainBloc: $e");
+        logger.e("MainBloc: $e");
         emit(MainError('Failed to fetch Pokémon List.'));
       }
     });
