@@ -6,6 +6,7 @@ import '../models/pokemon_card.dart';
 import '../repositories/pokemon_repository.dart';
 
 part 'pokemon_event.dart';
+
 part 'pokemon_state.dart';
 
 class PokemonBloc extends Bloc<PokemonEvent, PokemonState> {

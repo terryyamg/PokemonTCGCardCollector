@@ -5,7 +5,7 @@ import 'package:pokemon_tcg_card_collector/main/repositories/main_repository.dar
 
 import '../card/card_page.dart';
 import '../colors.dart';
-import 'AnimatedCard.dart';
+import 'animated_card.dart';
 import 'bloc/main_bloc.dart';
 
 void main() {

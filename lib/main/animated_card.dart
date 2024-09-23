@@ -95,12 +95,18 @@ class _AnimatedCardState extends State<AnimatedCard>
               );
             },
           ),
-          widget.name.isEmpty ? const SizedBox(height: 0.0) : const SizedBox(height: 8),
-          widget.name.isEmpty ? const SizedBox(height: 0.0) : Text(
-            widget.name,
-            style: const TextStyle(
-                fontSize: 16, fontWeight: FontWeight.bold, color: textColor),
-          ),
+          widget.name.isEmpty
+              ? const SizedBox(height: 0.0)
+              : const SizedBox(height: 8),
+          widget.name.isEmpty
+              ? const SizedBox(height: 0.0)
+              : Text(
+                  widget.name,
+                  style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: textColor),
+                ),
         ],
       ),
     );

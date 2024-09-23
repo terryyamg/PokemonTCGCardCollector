@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pokemon_tcg_card_collector/card_detail/card_detail_page.dart';
 
 import '../colors.dart';
-import '../main/AnimatedCard.dart';
+import '../main/animated_card.dart';
 import 'bloc/pokemon_bloc.dart';
 import 'repositories/pokemon_repository.dart';
 
@@ -57,7 +57,7 @@ class PokemonPage extends StatelessWidget {
               itemCount: state.pokemonCards.length,
               itemBuilder: (context, index) {
                 final pokemonCard = state.pokemonCards[index];
-                return  AnimatedCard(
+                return AnimatedCard(
                   imageUrl: pokemonCard.imageUrl,
                   name: '',
                   index: index,
@@ -65,7 +65,8 @@ class PokemonPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => CardDetailPage(imageUrl: pokemonCard.imageUrl),
+                        builder: (context) => CardDetailPage(
+                            pokemonCards: state.pokemonCards, number: index),
                       ),
                     );
                   },

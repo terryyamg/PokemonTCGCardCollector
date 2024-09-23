@@ -45,5 +45,9 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSPhotoLibraryUsageDescription</key>
+    <string>我們需要存取您的照片庫以保存圖片。</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>我們需要存取您的照片庫以保存圖片。</string>
 </dict>
 </plist>
