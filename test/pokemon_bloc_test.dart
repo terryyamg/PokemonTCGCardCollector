@@ -14,7 +14,7 @@ void main() {
 
   setUp(() {
     mockPokemonRepository = MockPokemonRepository();
-    pokemonBloc = PokemonBloc(mockPokemonRepository, '');
+    pokemonBloc = PokemonBloc(mockPokemonRepository, 'Pikachu');
   });
 
   tearDown(() {
