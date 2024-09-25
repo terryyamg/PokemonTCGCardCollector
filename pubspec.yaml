@@ -55,6 +55,7 @@ dev_dependencies:
     sdk: flutter
   bloc_test: ^9.1.0
   mocktail: ^0.3.0
+  flutter_launcher_icons: ^0.14.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -106,3 +107,11 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - assets/i18n/
+    - assets/icon/logo.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/logo.png"
+  adaptive_icon_background: "#ffffff" # 僅適用於 Android 8.0+
+  adaptive_icon_foreground: "assets/icon/my_new_icon_foreground.png" # 僅適用於 Android 8.0+
