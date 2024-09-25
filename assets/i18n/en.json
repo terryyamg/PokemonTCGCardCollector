@@ -1,0 +1,11 @@
+{
+  "app_title": "Pokémon TCG Card",
+  "loading": "Loading",
+  "error_message": "Failed to load",
+  "initial_message": "Press the button to load Pokémon cards",
+  "refresh": "Refresh",
+  "settings": "Settings",
+  "language": "Language",
+  "clear_data": "Clear Data",
+  "about": "About"
+}

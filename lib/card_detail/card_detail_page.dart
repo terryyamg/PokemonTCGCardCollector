@@ -12,7 +12,7 @@ import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import '../card/models/pokemon_card.dart';
-import '../main/main.dart';
+import '../utils/logger.dart';
 import 'bloc/card_detail_bloc.dart';
 
 class CardDetailPage extends StatelessWidget {

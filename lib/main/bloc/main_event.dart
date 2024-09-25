@@ -1,5 +1,10 @@
-part of 'main_bloc.dart';
+import 'package:equatable/equatable.dart';
 
-abstract class MainEvent {}
+abstract class MainEvent extends Equatable {
+  const MainEvent();
+
+  @override
+  List<Object> get props => [];
+}
 
 class LoadMainPokemon extends MainEvent {}

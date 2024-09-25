@@ -1,6 +1,10 @@
-part of 'main_bloc.dart';
+import 'package:equatable/equatable.dart';
+
+import '../models/main_pokemon.dart';
 
 abstract class MainState extends Equatable {
+  const MainState();
+
   @override
   List<Object> get props => [];
 }
@@ -12,7 +16,7 @@ class MainLoading extends MainState {}
 class MainLoaded extends MainState {
   final List<MainPokemon> mainPokemon;
 
-  MainLoaded(this.mainPokemon);
+  const MainLoaded(this.mainPokemon);
 
   @override
   List<Object> get props => [mainPokemon];
@@ -21,7 +25,7 @@ class MainLoaded extends MainState {
 class MainError extends MainState {
   final String message;
 
-  MainError(this.message);
+  const MainError(this.message);
 
   @override
   List<Object> get props => [message];

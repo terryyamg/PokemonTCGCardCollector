@@ -1,0 +1,11 @@
+{
+  "app_title": "寶可夢集換式卡牌",
+  "loading": "載入中",
+  "error_message": "載入失敗",
+  "initial_message": "請按按鈕載入寶可夢卡牌",
+  "refresh": "重新整理",
+  "settings": "設定",
+  "language": "語系",
+  "clear_data": "清除資料",
+  "about": "關於"
+}

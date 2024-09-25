@@ -1,14 +1,9 @@
-// lib/card/bloc/pokemon_bloc.dart
-import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../main.dart';
-import '../models/main_pokemon.dart';
+import '../../utils/logger.dart';
 import '../repositories/main_repository.dart';
-
-part 'main_event.dart';
-
-part 'main_state.dart';
+import 'main_event.dart';
+import 'main_state.dart';
 
 class MainBloc extends Bloc<MainEvent, MainState> {
   final MainRepository repository;
